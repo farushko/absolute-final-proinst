@@ -1,4 +1,4 @@
-import Navbaritem from "./Navbaritem";
+import Navbaritem from "@/components/Navbaritem";
 
 export default function Navbar() {
   return (

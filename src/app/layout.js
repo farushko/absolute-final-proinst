@@ -1,10 +1,12 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header";
-import Providers from "./Providers";
-import Navbar from "@/components/Navbar";
+import Logo from "@/components/Logo";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Comfortaa } from "next/font/google";
+
+const comfortaa = Comfortaa({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Pro Inst Website",
@@ -13,13 +15,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Providers>
-          <Header />
-          <Navbar/>
-          {children}
-        </Providers>
+    <html lang="en" className="bg-stone-800">
+      <body className={comfortaa.className}>
+        <div className="flex flex-col text-center justify-center md:max-w-6xl mx-auto md:grid md:grid-cols-5">
+          <div className="flex w-[100%] p-2 mx-auto mt-14 lg:mt-2 lg:col-span-1">
+            <Logo />
+          </div>
+          <div className="px-4 col-span-4">{children}</div>
+        </div>
       </body>
     </html>
   );
