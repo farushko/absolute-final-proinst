@@ -1,17 +1,7 @@
-"use client";
 import Image from "next/image";
-import { SiApachenetbeanside, SiBuildkite } from "react-icons/si";
-import { SlEvent } from "react-icons/sl";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import LogoCrop from "@/components/LogoCrop";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({});
-  }, []);
-
   return (
     <div className="max-w-auto mx-auto p-3 md:mt-16 md:max-w-6xl">
       <h1
