@@ -38,40 +38,6 @@ export default function Home() {
           alt="homepageimage"
         />
       </div>
-      {/* <div className="flex flex-col justify-between my-16 md:flex-row glass-container">
-        <div className="absolute inset-0 -z-10 bg-slate-600/30 blur-2xl filter" />
-        <div
-          className="flex flex-col justify-center md:w-1/3 text-center"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-          data-aos-duration="500"
-        >
-          <SlEvent size={60} color="" className="self-center my-5" />
-          <p>ПРОУЧВАНЕ</p>
-        </div>
-        <div
-          className="flex flex-col justify-center md:w-1/3 text-center"
-          data-aos="zoom-in"
-          data-aos-delay="400"
-          data-aos-duration="500"
-        >
-          <SiApachenetbeanside
-            size={80}
-            color="#7dd3fc"
-            className="self-center my-4"
-          />
-          <p>ПРОЕКТИРАНЕ</p>
-        </div>
-        <div
-          className="flex flex-col justify-center md:w-1/3 text-center"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-          data-aos-duration="500"
-        >
-          <SiBuildkite size={80} color="#bef264" className="self-center my-4" />
-          <p>ИЗГРАЖДАНЕ</p>
-        </div>
-      </div> */}
       <hr class="h-px my-8 bg-gray-500 border-0 dark:bg-gray-700"></hr>
       <div className="flex flex-col mt-24 justify-center">
         <h2
@@ -90,7 +56,7 @@ export default function Home() {
         >
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            <div className="flex flex-col text-center justify-center">
+            <div className="flex flex-col text-center">
               <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
                 Планиране
               </h1>
@@ -103,14 +69,18 @@ export default function Home() {
           </div>
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2 align-top">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            <div className="flex flex-col text-center justify-center align-top">
+            <div className="flex flex-col text-center align-top">
               <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
                 Изработка
               </h1>
               <p className="text-sm text-justify indent-6 hyphens-auto">
                 Качеството и надеждността на ремонтните работи са важни.
-                Избирайки КАП Инженеринг, можете да очаквате качествени и
-                компетентни решения за всеки ремонт или строителство.
+                Избирайки ПРО ИНСТ, можете да очаквате качествени и компетентни
+                решения за всеки ремонт или строителство. Популяризиран е през
+                60те години на 20ти век със издаването на Letraset листи,
+                съдържащи Lorem Ipsum пасажи, популярен е и в наши дни във
+                софтуер за печатни издания като Aldus PageMaker, който включва
+                различни версии на Lorem Ipsum.
               </p>
             </div>
           </div>
@@ -119,13 +89,33 @@ export default function Home() {
           className="mt-16 grid max-w-4xl grid-rows-[auto-auto-auto] gap-8 md:grid-cols-3 md:gap-10"
           data-aos="fade-up"
         >
-          <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2">
+          <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2 align-top">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            Предаване
+            <div className="flex flex-col text-center align-top">
+              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
+                Предаване
+              </h1>
+              <p className="text-sm text-justify indent-6 hyphens-auto">
+                Популяризиран е през 60те години на 20ти век със издаването на
+                Letraset листи, съдържащи Lorem Ipsum пасажи, популярен е и в
+                наши дни във софтуер за печатни издания като Aldus PageMaker,
+                който включва различни версии на Lorem Ipsum.
+              </p>
+            </div>
           </div>
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            ПРОУЧВАНЕ
+            <div className="flex flex-col text-center">
+              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
+                Проучване
+              </h1>
+              <p className="text-sm text-justify indent-6 hyphens-auto">
+                Популяризиран е през 60те години на 20ти век със издаването на
+                Letraset листи, съдържащи Lorem Ipsum пасажи, популярен е и в
+                наши дни във софтуер за печатни издания като Aldus PageMaker,
+                който включва различни версии на Lorem Ipsum.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "fastly.picsum.photos",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "placekitten.com",
+        pathname: "**",
+      },
     ],
   },
 };

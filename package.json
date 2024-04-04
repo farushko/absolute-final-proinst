@@ -11,16 +11,24 @@
   "dependencies": {
     "@vercel/speed-insights": "^1.0.10",
     "aos": "^2.3.4",
+    "awesome-image-viewer": "^1.0.60",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.13",
+    "fslightbox-react": "^1.7.6",
     "next": "14.1.2",
     "next-gallery": "^2.1.0",
     "next-themes": "^0.2.1",
+    "photoswipe": "^5.4.3",
+    "photoswipe-dynamic-caption-plugin": "^1.2.7",
     "react": "^18",
+    "react-18-image-lightbox": "^5.1.4",
     "react-dom": "^18",
+    "react-grid-gallery": "^1.0.1-alpha.0",
     "react-icons": "^5.0.1",
     "react-photo-album": "^2.3.1",
-    "tailwind-merge": "^2.2.1"
+    "react-photoswipe-gallery": "^3.0.1",
+    "tailwind-merge": "^2.2.1",
+    "yet-another-react-lightbox": "^3.17.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
