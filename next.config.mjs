@@ -5,7 +5,12 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "image.tmdb.org",
-        pathname: "**"
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "fastly.picsum.photos",
+        pathname: "**",
       },
     ],
   },

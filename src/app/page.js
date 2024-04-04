@@ -48,7 +48,7 @@ export default function Home() {
           alt="homepageimage"
         />
       </div>
-      <div className="flex flex-col justify-between my-16 md:flex-row glass-container">
+      {/* <div className="flex flex-col justify-between my-16 md:flex-row glass-container">
         <div className="absolute inset-0 -z-10 bg-slate-600/30 blur-2xl filter" />
         <div
           className="flex flex-col justify-center md:w-1/3 text-center"
@@ -81,7 +81,7 @@ export default function Home() {
           <SiBuildkite size={80} color="#bef264" className="self-center my-4" />
           <p>ИЗГРАЖДАНЕ</p>
         </div>
-      </div>
+      </div> */}
       <hr class="h-px my-8 bg-gray-500 border-0 dark:bg-gray-700"></hr>
       <div className="flex flex-col mt-24 justify-center">
         <h2
@@ -100,11 +100,29 @@ export default function Home() {
         >
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            ПРОУЧВАНЕ
+            <div className="flex flex-col text-center justify-center">
+              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
+                Планиране
+              </h1>
+              <p className="text-sm text-justify indent-6 hyphens-auto">
+                Планирането на проекта е изключително важно. Трябва да решите
+                какви промени искате да направите и какви материали, технологии
+                или стилове ще отговарят най-добре на вашите нужди.
+              </p>
+            </div>
           </div>
-          <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2">
+          <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2 align-top">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            ПРОУЧВАНЕ
+            <div className="flex flex-col text-center justify-center align-top">
+              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
+                Изработка
+              </h1>
+              <p className="text-sm text-justify indent-6 hyphens-auto">
+                Качеството и надеждността на ремонтните работи са важни.
+                Избирайки КАП Инженеринг, можете да очаквате качествени и
+                компетентни решения за всеки ремонт или строителство.
+              </p>
+            </div>
           </div>
         </div>
         <div
@@ -113,7 +131,7 @@ export default function Home() {
         >
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-            ПРОУЧВАНЕ
+            Предаване
           </div>
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
@@ -135,9 +153,7 @@ export default function Home() {
         <div className="mt-8 text-5xl text-center" data-aos="fade-up">
           Връзка с нас
         </div>
-        <button className="mt-6">
-          Obadete se
-        </button>
+        <button className="mt-6">Obadete se</button>
       </div>
     </div>
   );
