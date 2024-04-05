@@ -1,5 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import LogoCrop from "@/components/LogoCrop";
+import {
+  BiAnalyse,
+  BiSelectMultiple,
+  BiWrench,
+  BiCalendar,
+  BiPhoneCall,
+} from "react-icons/bi";
 
 export default function Home() {
   return (
@@ -19,13 +27,14 @@ export default function Home() {
         инсталации
       </h1>
       <div
-        className="mx-auto my-12 max-w-lg text-balance text-slate-300 text-center"
+        className="mx-auto my-12 max-w-xl text-balance text-slate-300 text-center"
         data-aos="fade-up"
       >
-        <p>
-          Съществуват много вариации на пасажа Lorem Ipsum, но повечето от тях
-          са променени по един или друг начин чрез добавяне на смешни думи или
-          разбъркване на думите, което не изглежда много достоверно.
+        <p className="text-justify hyphens-auto text-balance">
+          Проектирането и изграждането на инсталации за битова гореща вода (БГВ)
+          и отопление, вентилация и климатизация (ОВК) изисква внимателно
+          планиране, опит в инженерните принципи и спазване на строителните
+          норми и стандарти.
         </p>
       </div>
       <div className="glass-container mt-16 w-fit" data-aos="flip-up">
@@ -41,10 +50,10 @@ export default function Home() {
       <hr class="h-px my-8 bg-gray-500 border-0 dark:bg-gray-700"></hr>
       <div className="flex flex-col mt-24 justify-center">
         <h2
-          className="text-balance text-center text-5xl font-medium md:text-7xl"
+          className="text-balance text-center text-4xl font-medium md:text-6xl"
           data-aos="fade-up"
         >
-          The new <em>Gold Standard</em>
+          Професионални <em>решения и услуги</em>
         </h2>
         <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
           Deserunt tempor aliqua eu occaecat culpa nulla labore fugiat nisi sunt
@@ -57,9 +66,12 @@ export default function Home() {
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center">
-              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
-                Планиране
-              </h1>
+              <div className="flex flex-row gap-x-2">
+                <BiAnalyse size={60} className="text-amber-300" />
+                <h1 className="flex w-full text-lg text-left justify-center underline underline-offset-2 mb-3">
+                  Фаза на оценка и проектиране
+                </h1>
+              </div>
               <p className="text-sm text-justify indent-6 hyphens-auto">
                 Планирането на проекта е изключително важно. Трябва да решите
                 какви промени искате да направите и какви материали, технологии
@@ -70,17 +82,18 @@ export default function Home() {
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2 align-top">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center align-top">
-              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
-                Изработка
-              </h1>
-              <p className="text-sm text-justify indent-6 hyphens-auto">
-                Качеството и надеждността на ремонтните работи са важни.
-                Избирайки ПРО ИНСТ, можете да очаквате качествени и компетентни
-                решения за всеки ремонт или строителство. Популяризиран е през
-                60те години на 20ти век със издаването на Letraset листи,
-                съдържащи Lorem Ipsum пасажи, популярен е и в наши дни във
-                софтуер за печатни издания като Aldus PageMaker, който включва
-                различни версии на Lorem Ipsum.
+              <div className="flex flex-row gap-x-2 align-middle">
+                <BiSelectMultiple size={50} className="text-green-500" />
+                <h1 className="flex w-full text-lg my-auto text-left underline underline-offset-2 align-middle mb-3 md:mb-0">
+                  Разрешителни и одобрения
+                </h1>
+              </div>
+              <p className="text-sm text-justify indent-6 hyphens-auto text-wrap">
+                Получеване на необходимите разрешителни. Осигуряваме
+                съответствие с местните строителни норми, разпоредби за зониране
+                и стандарти за безопасност. Представяме подробни планове и
+                спецификации на съответните органи за одобрение преди започване
+                на строителството.
               </p>
             </div>
           </div>
@@ -92,28 +105,38 @@ export default function Home() {
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2 align-top">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center align-top">
-              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
-                Предаване
-              </h1>
+              <div className="flex flex-row gap-x-2 align-middle">
+                <BiWrench size={50} className="text-cyan-500" />
+                <h1 className="flex w-full text-lg my-auto text-left underline underline-offset-2 align-middle">
+                  Монтаж и тестване
+                </h1>
+              </div>
               <p className="text-sm text-justify indent-6 hyphens-auto">
-                Популяризиран е през 60те години на 20ти век със издаването на
-                Letraset листи, съдържащи Lorem Ipsum пасажи, популярен е и в
-                наши дни във софтуер за печатни издания като Aldus PageMaker,
-                който включва различни версии на Lorem Ipsum.
+                Персоналът на ПРО ИНСТ е специализиран в инсталации за БГВ и
+                ОВК, за да гарантирате правилното инсталиране и интегриране на
+                системите. Извършете цялостно тестване на системите за БГВ и
+                ОВК, за да сте сигурни, че отговарят на изискванията за
+                производителност и стандартите за безопасност. Регулирайте
+                настройките: Настройте фино контролните настройки и калибрирайте
+                оборудването за оптимална работа и енергийна ефективност.
               </p>
             </div>
           </div>
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center">
-              <h1 className="flex w-full text-lg text-center justify-center underline underline-offset-2 mb-3">
-                Проучване
-              </h1>
+              <div className="flex flex-row gap-x-2 align-middle">
+                <BiCalendar size={50} className="text-red-500" />
+                <h1 className="flex w-full text-lg my-auto text-left underline underline-offset-2 align-middle">
+                  Подръжка
+                </h1>
+              </div>
               <p className="text-sm text-justify indent-6 hyphens-auto">
-                Популяризиран е през 60те години на 20ти век със издаването на
-                Letraset листи, съдържащи Lorem Ipsum пасажи, популярен е и в
-                наши дни във софтуер за печатни издания като Aldus PageMaker,
-                който включва различни версии на Lorem Ipsum.
+                Създайте график за рутинни задачи по поддръжката, като смяна на
+                филтри, инспекции на оборудването и проверки на ефективността.
+                Наблюдавайте консумацията на енергия, температурните нива и
+                работата на системата, за да идентифицирате потенциални проблеми
+                и да оптимизирате производителността във времето.
               </p>
             </div>
           </div>
@@ -121,19 +144,62 @@ export default function Home() {
       </div>
       <div className="glow absolute -z-10 aspect-auto w-full max-w-sm rounded-full bg-blue-500/50 blur-[160px] filter" />
       <hr class="h-px mt-14 bg-gray-500 border-0 dark:bg-gray-700"></hr>
-      <div className="max-w-auto text-balance py-32 text-center font-medium md:py-20 justify-center">
+      <div className="flex flex-col mt-10 justify-center">
+        <h2
+          className="text-balance text-center text-4xl font-medium md:text-6xl"
+          data-aos="fade-down"
+        >
+          Нашите <em>клиенти</em>
+        </h2>
+        <div
+          className="grid md:grid-cols-3 gap-4 mt-12 px-10"
+          data-aos="fade-up"
+        >
+          <Image
+            src="/logo-hbpn-bg-small-.jpg"
+            alt="сърце и мозък"
+            width={400}
+            height={100}
+            className="border rounded-xl"
+            data-aos="flip-left"
+          />
+          <Image
+            src="/mama-i-az.jpg"
+            alt="mama i az"
+            width={400}
+            height={100}
+            className="border rounded-xl"
+            data-aos="flip-left"
+          />
+          <Image
+            src="/logo-hbpn-bg-small-.jpg"
+            alt="сърце и мозък"
+            width={400}
+            height={100}
+            className="border rounded-xl"
+            data-aos="flip-left"
+          />
+        </div>
+      </div>
+      <hr class="h-px mt-14 bg-gray-500 border-0 dark:bg-gray-700"></hr>
+      <div className="max-w-auto text-balance py-12 text-center font-medium md:py-20 justify-center">
         <div
           className="glass-container-oval rounded-full p-1 mx-auto max-w-32 md:rounded-full text-center justify-center"
           data-aos="zoom-in"
           data-aos-delay="300"
           data-aos-duration="500"
         >
-          <LogoCrop />
+          <Link href="tel:+359886191251">
+            <LogoCrop />
+          </Link>
         </div>
-        <div className="mt-8 text-5xl text-center" data-aos="fade-up">
+        <div
+          className="flex gap-4 mt-8 text-3xl text-center justify-center"
+          data-aos="fade-up"
+        >
           Връзка с нас
         </div>
-        <button className="mt-6">Obadete se</button>
+        <button className="mt-6"></button>
       </div>
     </div>
   );
