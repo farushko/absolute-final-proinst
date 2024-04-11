@@ -66,9 +66,9 @@ export default function Home() {
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center">
-              <div className="flex flex-row gap-x-2">
+              <div className="flex flex-row gap-x-4 ml-6 align-middle mb-2">
                 <BiAnalyse size={60} className="text-amber-300" />
-                <h1 className="flex w-full text-lg text-left justify-center underline underline-offset-2 mb-3">
+                <h1 className="flex text-lg my-auto text-left underline underline-offset-2">
                   Фаза на оценка и проектиране
                 </h1>
               </div>
@@ -82,9 +82,9 @@ export default function Home() {
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2 align-top">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center align-top">
-              <div className="flex flex-row gap-x-2 align-middle">
+              <div className="flex flex-row gap-x-4 ml-6 align-middle mb-2">
                 <BiSelectMultiple size={50} className="text-green-500" />
-                <h1 className="flex w-full text-lg my-auto text-left underline underline-offset-2 align-middle mb-3 md:mb-0">
+                <h1 className="flex text-lg my-auto text-left underline underline-offset-2 align-middle mb-3 md:mb-0">
                   Разрешителни и одобрения
                 </h1>
               </div>
@@ -105,9 +105,9 @@ export default function Home() {
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 md:col-span-2 align-top">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center align-top">
-              <div className="flex flex-row gap-x-2 align-middle">
+              <div className="flex flex-row gap-x-4 ml-6 align-middle mb-2">
                 <BiWrench size={50} className="text-cyan-500" />
-                <h1 className="flex w-full text-lg my-auto text-left underline underline-offset-2 align-middle">
+                <h1 className="flex text-lg my-auto text-left underline underline-offset-2 align-middle">
                   Монтаж и тестване
                 </h1>
               </div>
@@ -125,9 +125,9 @@ export default function Home() {
           <div className="glass-container row-span-1 grid grid-rows-subgrid gap-4 rounded-lg bg-gradient-to-b from-stone-800 to-stone-950 p-4 ">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
             <div className="flex flex-col text-center">
-              <div className="flex flex-row gap-x-2 align-middle">
+              <div className="flex flex-row gap-x-4 ml-6 align-middle mb-2">
                 <BiCalendar size={50} className="text-red-500" />
-                <h1 className="flex w-full text-lg my-auto text-left underline underline-offset-2 align-middle">
+                <h1 className="flex text-lg my-auto text-left underline underline-offset-2 align-middle">
                   Подръжка
                 </h1>
               </div>
@@ -152,7 +152,7 @@ export default function Home() {
           Нашите <em>клиенти</em>
         </h2>
         <div
-          className="grid md:grid-cols-3 gap-4 mt-12 px-10"
+          className="grid md:grid-cols-3 gap-4 mt-12 px-10 justify-center"
           data-aos="fade-up"
         >
           <Image
