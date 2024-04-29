@@ -32,9 +32,11 @@ export default function Home() {
       >
         <p className="text-justify hyphens-auto text-balance">
           Проектирането и изграждането на инсталации за битова гореща вода (БГВ)
-          и отопление, вентилация и климатизация (ОВК) изисква внимателно
+          и отопление, вентилация, климатизация (ОВК) изисква внимателно
           планиране, опит в инженерните принципи и спазване на строителните
-          норми и стандарти.
+          норми и стандарти.{" "}
+          <span className="font-bold text-sky-400">Про Инст</span> е фирма с
+          огромен опит, история и голям брой завършени обекти.
         </p>
       </div>
       <div className="glass-container mt-16 w-fit" data-aos="flip-up">
@@ -152,33 +154,42 @@ export default function Home() {
           Нашите <em>клиенти</em>
         </h2>
         <div
-          className="grid md:grid-cols-3 gap-4 mt-12 px-10 justify-center"
+          className="grid md:grid-cols-3 gap-8 mt-12 px-10 justify-center"
           data-aos="fade-up"
         >
-          <Image
-            src="/logo-hbpn-bg-small-.jpg"
-            alt="сърце и мозък"
-            width={400}
-            height={100}
-            className="border rounded-xl"
-            data-aos="flip-left"
-          />
+          <div className="glass-container">
+            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
+            <Image
+              src="/logo-hbpn-bg-small-.jpg"
+              alt="сърце и мозък"
+              width={340}
+              height={100}
+              className="border rounded-xl"
+              data-aos="flip-left"
+            />
+          </div>
+          <div className="glass-container">
+            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
           <Image
             src="/mama-i-az.jpg"
             alt="mama i az"
-            width={400}
+            width={340}
             height={100}
             className="border rounded-xl"
             data-aos="flip-left"
           />
+          </div>
+          <div className="glass-container">
+            <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
           <Image
             src="/logo-hbpn-bg-small-.jpg"
             alt="сърце и мозък"
-            width={400}
+            width={340}
             height={100}
             className="border rounded-xl"
             data-aos="flip-left"
           />
+          </div>
         </div>
       </div>
       <hr class="h-px mt-14 bg-gray-500 border-0 dark:bg-gray-700"></hr>
