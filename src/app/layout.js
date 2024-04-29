@@ -3,6 +3,7 @@ import "./globals.css";
 import Logo from "@/components/Logo";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Comfortaa } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const comfortaa = Comfortaa({
   weight: "400",
