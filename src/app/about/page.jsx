@@ -1,31 +1,33 @@
 import Image from "next/image";
 import Gallery from "@/components/Gallery";
+import Contacts from "@/components/Contacts";
 
 export default function AboutUs() {
   return (
     <div className="max-w-auto mx-auto p-3 md:mt-16 md:max-w-6xl">
       <h1
-        className="max-w-5xl text-balance text-center text-4xl font-medium md:text-6xl mb-10 leading-relaxed"
+        className="max-w-5xl text-balance text-center text-4xl font-medium md:text-6xl mb-6 leading-relaxed"
         data-aos="fade-down"
       >
         Сертификати
       </h1>
       <div
-        className="mx-auto my-12 max-w-lg text-balance text-slate-300 text-center"
-        data-aos="fade-up"
-      >
-        <p>
-          Съществуват много вариации на пасажа Lorem Ipsum, но повечето от тях
-          са променени по един или друг начин чрез добавяне на смешни думи или
-          разбъркване на думите, което не изглежда много достоверно.
-        </p>
-      </div>
-      <div
-        className="max-w-auto mx-auto p-3 md:mt-16 md:max-w-6xl"
+        className="max-w-auto mx-auto p-3 md:mt-10 md:max-w-6xl"
         data-aos="fade-down"
       >
-        <Gallery />
+        {/* <Gallery /> */}
+        <div className="glass-container mt-16 w-fit" data-aos="flip-up">
+          <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
+          <Image
+            src="/Cert-1.jpg"
+            width={1200}
+            height={700}
+            className="rounded-lg"
+            alt="homepageimage"
+          />
+        </div>
       </div>
+      <Contacts/>
     </div>
   );
 }

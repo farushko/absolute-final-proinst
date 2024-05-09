@@ -8,6 +8,7 @@ import {
   BiCalendar,
   BiPhoneCall,
 } from "react-icons/bi";
+import Contacts from "@/components/Contacts";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
         className="mx-auto my-12 max-w-xl text-balance text-slate-300 text-center"
         data-aos="fade-up"
       >
-        <p className="text-justify hyphens-auto text-balance">
+        <p className="text-justify hyphens-auto text-pretty">
           Проектирането и изграждането на инсталации за битова гореща вода (БГВ)
           и отопление, вентилация, климатизация (ОВК) изисква внимателно
           планиране, опит в инженерните принципи и спазване на строителните
@@ -57,9 +58,10 @@ export default function Home() {
         >
           Професионални <em>решения и услуги</em>
         </h2>
-        <div className="mx-auto mt-6 max-w-md text-balance text-center text-slate-300">
-          Deserunt tempor aliqua eu occaecat culpa nulla labore fugiat nisi sunt
-          laboris cupidatat exercitation.
+        <div className="mx-auto mt-6 max-w-xl text-pretty text-slate-300 text-justify hyphens-auto">
+          Изграждането на водопроводни и канализационни инсталации (ВИК и ОВК) е
+          важен процес, който изисква специализирани знания и умения. Ето някои
+          от основните стъпки при изграждането на тези инсталации:
         </div>
         <div
           className="mt-16 grid max-w-4xl grid-rows-[auto-auto-auto] gap-8 md:grid-cols-3 md:gap-10"
@@ -170,48 +172,29 @@ export default function Home() {
           </div>
           <div className="glass-container">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-          <Image
-            src="/mama-i-az.jpg"
-            alt="mama i az"
-            width={340}
-            height={100}
-            className="border rounded-xl"
-            data-aos="flip-left"
-          />
+            <Image
+              src="/mama-i-az.jpg"
+              alt="mama i az"
+              width={340}
+              height={100}
+              className="border rounded-xl"
+              data-aos="flip-left"
+            />
           </div>
           <div className="glass-container">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter" />
-          <Image
-            src="/logo-hbpn-bg-small-.jpg"
-            alt="сърце и мозък"
-            width={340}
-            height={100}
-            className="border rounded-xl"
-            data-aos="flip-left"
-          />
+            <Image
+              src="/logo-hbpn-bg-small-.jpg"
+              alt="сърце и мозък"
+              width={340}
+              height={100}
+              className="border rounded-xl"
+              data-aos="flip-left"
+            />
           </div>
         </div>
       </div>
-      <hr class="h-px mt-14 bg-gray-500 border-0 dark:bg-gray-700"></hr>
-      <div className="max-w-auto text-balance py-12 text-center font-medium md:py-20 justify-center">
-        <div
-          className="glass-container-oval rounded-full p-1 mx-auto max-w-32 md:rounded-full text-center justify-center"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-          data-aos-duration="500"
-        >
-          <Link href="tel:+359886191251">
-            <LogoCrop />
-          </Link>
-        </div>
-        <div
-          className="flex gap-4 mt-8 text-3xl text-center justify-center"
-          data-aos="fade-up"
-        >
-          Връзка с нас
-        </div>
-        <button className="mt-6"></button>
-      </div>
+      <Contacts/>
     </div>
   );
 }
